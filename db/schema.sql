@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS goggles_db;
+
+CREATE DATABASE goggles_db;
