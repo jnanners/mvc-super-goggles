@@ -26,8 +26,8 @@ router.get("/", (req, res) => {
 
         //render the posts with homepage template
         res.render("homepage", {
-            posts
-            //loggedIn: req.session.loggedIn will go here
+            posts,
+            loggedIn: req.session.loggedIn
         });
     })
     .catch(err => {
@@ -37,7 +37,13 @@ router.get("/", (req, res) => {
 });
 
 //router.get for login
-
+router.get("/login", (req, res) => {
+    if(req.session.loggedIn){
+        res.redirect("/");
+        return;
+    }
+    res.render("login");
+});
 
 //get one post and render with homepage template
 router.get("/post/:id", (req, res) => {
@@ -70,8 +76,8 @@ router.get("/post/:id", (req, res) => {
 
         //pass data to template
         res.render("single-post", {
-            post
-            //loggedIn: req.session.loggedIn will go here
+            post,
+            loggedIn: req.session.loggedIn
         })
     })
     .catch(err => {
