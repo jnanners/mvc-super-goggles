@@ -1,16 +1,16 @@
 # MVC-SUPER-GOGGLES
 ## Description  
   [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)  
-  This is a command line application that allows a user to view the tables within a companies database.
+  This is a tech-blog application that allows users to create an account and make posts, as well as comment on post's made by themselves or other users.
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
   * [License](#license)
   * [Questions](#questions)
   ## Installation
-  
+  Simply go to https://boiling-springs-34084.herokuapp.com/ to use the deployed application.
   ## Usage
-  Follow the prompts to view and add employees, roles, and departments as well as update employee roles. To close the application simply press Ctrl + c.
+  Click the login link to create and account or login. From there you can make posts and comment on posts.
   ## License
   <a href='https://opensource.org/licenses/unlicense' target='_blank'>The Unlicensed</a>
   ## Questions
